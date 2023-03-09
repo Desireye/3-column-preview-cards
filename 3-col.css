@@ -1,0 +1,133 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: hsl(0deg 0% 95%);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1{
+    font-size: 2.5rem;
+    margin-top: 13%;
+    font-family:'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+  }
+p{
+  font-family: 'Lexend Deca', sans-serif;
+  margin-top: 13%;
+  font-size: 0.85rem;
+  font-weight: lighter;
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.5rem;
+}
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button{
+  border-radius: 5rem;
+  padding: 7% 15%;
+  background: #f1f3f0;
+  margin-top: 37%;
+  display: flex;
+  justify-content: center;
+  font-family: 'Lexend Deca', sans-serif;
+  cursor: pointer;
+}
+#cards{
+    width: 19rem;
+    height: 30rem;
+    color: white;
+    padding: 6.2%;
+}
+.orange{
+  background: #e28525;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+.orange-button{
+  border: 1px solid  white;
+  color: #e28525;
+}
+.orange-button:hover{
+    background: #e28525;
+    color: white;
+}
+.teal{
+  background: #016972;
+}
+.teal-button{
+  border: 1px solid white;
+  color: #016972;
+}
+.teal-button:hover{
+    background: #016972;
+    color: white;
+}
+.dark-green{
+  background: #00403f;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+.dgreen-button{
+  border: 1px solid white;
+  color: #00403f;
+}
+.dgreen-button:hover{
+    background: #00403f;
+    color: white;
+}
+footer{
+    font-family:'Big Shoulders Display', cursive;
+    font-size: 0.7rem;
+    color: #016972;
+    position: absolute;
+    bottom: 1%;
+}
+a{
+    color: #00403f;
+    text-decoration: overline;
+}
+a:hover{
+    color: #e28525;
+}
+
+@media screen and (max-width: 375px){
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20% 0;
+    }
+    main{
+        flex-direction: column;
+    }
+    #cards{
+        height: 27rem;
+        padding: 15%;
+    }
+    button{
+        margin-top: 13%;
+    }
+    .orange{
+        border-top-right-radius: 0.5rem;
+        border-bottom-left-radius: 0rem;
+    }
+    .dark-green{
+        border-top-right-radius: 0rem;
+        border-bottom-left-radius: 0.5rem;
+    }
+    footer{
+        position: relative;
+        margin-top: 11%;
+        margin-bottom: -16%;
+    }
+}
